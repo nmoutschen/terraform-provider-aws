@@ -133,7 +133,7 @@ func resourceServiceNetworkVPCAssociationRead(ctx context.Context, d *schema.Res
 	d.Set("arn", out.Arn)
 	d.Set("created_by", out.CreatedBy)
 	d.Set("vpc_identifier", out.VpcId)
-	d.Set("service_network_identifier", out.ServiceNetworkId)
+	// d.Set("service_network_identifier", out.ServiceNetworkId)
 	d.Set("security_group_ids", out.SecurityGroupIds)
 	d.Set("status", out.Status)
 
